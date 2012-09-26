@@ -54,7 +54,7 @@
           <pluginKey>csharpsquid</pluginKey>
           <pluginName>C# Squid</pluginName>
           <pluginClass>com.sonar.plugins.csharp.squid.CSharpSquidPlugin</pluginClass>
-          <skipDependenciesPackaging>true</skipDependenciesPackaging>
+          <skipDependenciesPackaging>false</skipDependenciesPackaging>
           <addMavenDescriptor>false</addMavenDescriptor>
           <basePlugin>csharp</basePlugin>
         </configuration>
