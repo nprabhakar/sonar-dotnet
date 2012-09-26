@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+  <name>sonar-csharp-rules-plugin</name>
+  <comment>Sets of C# checks that implement rules to follow in C# developments. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects>
+    <project>sonar-csharp-squid-plugin</project>
+    <project>csharp-squid</project>
+    <project>csharp-checks</project>
+    <project>sonar-csharp-core-plugin</project>
+    <project>dotnet-tools-commons</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>
