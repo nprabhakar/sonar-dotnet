@@ -37,4 +37,10 @@
   <ItemGroup>
     <Compile Include="TestProgram.vb" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpLibraryProject\CSharpLibraryProject.csproj">
+      <Project>{F8DF055F-1DBF-4EA6-8E53-3708B626F1F3}</Project>
+      <Name>CSharpLibraryProject</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
