@@ -118,7 +118,7 @@ public class VisualStudioVBProjectTest {
     // check that the solution is built
     VisualStudioSolution solution = microsoftWindowsEnvironment.getCurrentSolution();
     assertNotNull(solution);
-    assertThat(solution.getProjects().size(), is(1));
+    assertThat(solution.getProjects().size(), is(3));
     
     assertThat(microsoftWindowsEnvironment.getCurrentProject("TestVBProject").getSourceFiles().size(), is(1));
     

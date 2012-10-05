@@ -280,8 +280,9 @@ public final class ModelFactory {
 			// Searches VB Projects
 			Matcher vbMatcher = vbPattern.matcher(projectDefinition);
 			if (vbMatcher.find()) {
-				String projectName = matcher.group(1);
-				String projectPath = StringUtils.replace(matcher.group(2), "\\", File.separatorChar + "");
+				LOG.info("VB Project Group Count" + vbMatcher.groupCount());
+				String projectName = vbMatcher.group(1);
+				String projectPath = StringUtils.replace(vbMatcher.group(2), "\\", File.separatorChar + "");
 
 				File projectFile = new File(baseDirectory, projectPath);
 				if (!projectFile.exists()) {
@@ -518,7 +519,7 @@ public final class ModelFactory {
 				Element compileElement = (Element) nodes.item(idxNode);
 				// We filter the files
 				String filePath = compileElement.getAttribute("Include");
-				if ((filePath != null) && filePath.endsWith(".cs")) {
+				if ((filePath != null) && (filePath.endsWith(".cs") || filePath.endsWith(".vb"))) {
 
 					// fix tests on unix system
 					// but should not be necessary
